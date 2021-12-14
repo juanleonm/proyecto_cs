@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://imt2200.github.io/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilos_preguntas.css">
+    <title>Preguntas Proyecto</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="header">
+            <h1>Pandemia y principales índices económicos relacionados con la tasa de desempleo y el valor de UF</h1>
+            
+        </div>
+        <div id="menu">
+            <ul class="menu">
+                <li> <a href="index.html">Inicio</a>              
+                </li>
+
+                <li> <a href="#">Video</a> 
+                </li>
+                <li> <a href="preguntas.html">Preguntas</a>
+                   
+                </li>
+                <li> <a target="_blank" href="https://github.com/juanleonm/proyecto_cs">Jupyter</a>
+                     
+                </li>
+                <li> <a href="datos.html">Datos</a> 
+                    
+                </li>
+                
+            </ul>
+        </div>
+        <div id="subheader">
+            <h2>Preguntas a responder en el proyecto</h2>
+        </div>
+
+        <div id="horario">
+
+            <div id="pregunta_1">
+                
+                <h3 id="subtitulo_p"> ¿Cúales son los indicadores económicos que mantienen una mayor relación con la Unidad de Fomento (UF) y la tasa de desempleo?, ¿y cuales la menor?</h3> 
+                <br><br>
+
+
+                <h4 id="parr_1"> Para poder responder a esta pregunta podemos utilizar la correlación que tienen entre sí los índices económicos a utilizar:</h4> 
+                <img id="imagen_1" src="imagenes/correlacion_chile.png">
+                <img id="imagen_2" src="imagenes/heatmap_chile.png">
+                <br><br><br>
+                <h4 id="parr_1">Despues de ver sus resultados de correlación podemos observar 
+                    que los indicadores de la libra de cobre, ivp, iamcec, tasa de desempleo 
+                    y utm mantienen una correlación alta con la uf, mientras que el tpm y la 
+                    uf son lo que más se relacionan con la tasa de desempleo. <br> 
+                    El resto posee baja correlación con nuestras variables de interés.</h4> 
+
+            </div>
+            <br><br><br><br>
+
+            <div id="pregunta_2">
+                
+                <h3 id="subtitulo_p">¿Tuvo el COVID-19 una relación directa en el aumento de la tasa de desempleo?</h3> 
+                <br><br>
+
+
+                <h4 id="parr_1"> Para poder responder a esta pregunta podemos utilizar la correlación que tienen estos dos valores y un pequeño gráfico:</h4> 
+                <br><br>
+                <img id="imagen_3" src="imagenes/correlacion_1.png">
+                <img id="imagen_4" src="imagenes/grafico_corr_1.png">
+                <br><br><br>
+                <h4 id="parr_1">A pesar de que el gráfico da a pensar que puede haber una 
+                    relación directa, al ver la correlación que mantiene la tasa de desempleo 
+                    y el número de casos nuevos por mes notamos que es un valor muy bajo 
+                    (cercano a 0.3) por lo que no se puede afirmar que la pandemia fue el 
+                    principal factor de la alza em la tasa de desempleo.</h4> 
+
+            </div>
+
+            <br><br><br><br>
+
+            <div id="pregunta_3">
+                
+                <h3 id="subtitulo_p">Considerando el periodo en donde hubo mayor tasa de contaigos 
+                    de COVID-19 en el país, ¿Es posible visualizar consecuencias inmediatas en la economía del país?</h3> 
+                <br><br>
+
+
+                <h4 id="parr_1">Primero buscamos el inicio del periodo de mayor número de contagios, el cual comienza en la semana 13:</h4> 
+                <br><br>
+                <img id="imagen_5" src="imagenes/peak_covid.png">
+                <br><br>
+            
+                <h4 id="parr_1">Ahora graficamos desde ese periodo todas las variables para ver qué implicancias tuvo la alza en los contagios:</h4> 
+                <br><br>
+
+
+
+                <img id="imagen_5" src="imagenes/todas_las_variables.png">
+                <br><br><br>
+                <h4 id="parr_1">Logramos notar que cuando se observa un mayor indice de casos de covid, 
+                    el IPC muestra una bajada en su valor, mientras que la Tasa de desempleo y el UTM mantienen un crecimineto moderado, finalmente 
+                    cuando los casos de covid se estabilizan, la tasa de desemplo baja fuertemente.</h4> 
+
+            </div>
+
+            <br><br><br><br>
+
+            <div id="pregunta_4">
+                
+                <h3 id="subtitulo_p">¿Tuvo el COVID-19 consecuencias directas en el valor de la Unidad de Fomento (UF)?</h3> 
+                <br><br>
+
+
+                <h4 id="parr_1"> Para poder responder a esta pregunta podemos utilizar la correlación que tienen estos dos valores y un pequeño gráfico:</h4> 
+                <br><br>
+                <img id="imagen_3" src="imagenes/correlacion_2.png">
+                <img id="imagen_4" src="imagenes/grafico_corr_2.png">
+                <br><br><br>
+                <h4 id="parr_1">A pesar de que el gráfico da a pensar que puede haber una relación inversa,
+                     al ver la correlación que mantiene la tasa de desempleo y el número de casos nuevos por
+                      mes notamos que es un valor muy bajo (cercano a -0.3) por lo que no se puede afirmar que 
+                      la pandemia fue el principal factor de una disminución del crecimiento de la UF.</h4> 
+
+            </div>
+
+            <br><br><br><br>
+
+            <div id="pregunta_5">
+                
+                <h3 id="subtitulo_p">¿Se puede crear un modelo que prediga los valores de la unidad de fomento (UF) y la tasa de desempleo?</h3> 
+                <br><br>
+
+
+                <h4 id="parr_1">Para esto se usarán dos modelos de predicción, una para la unidad de fomento (UF)
+                     y otra para la tasa de desempleo, cada una será puesta a prueba en las variantes de regresión lineal, 
+                     de Lasso y de Ridge, probando diversos valores de alpha para encontrar el que mejor se adapta.</h4> 
+                <br><br>
+                <h3 id="parr_1">1) Predicción del valor de la UF</h3>
+                <br><br>
+                <h4 id="parr_1">Al realizar pruebas de los tres modelos de regresión, con distintos valores de alpha para los que lo requieren, se llega a la conclusión
+                    de que el modelo que mejor se adapta a nuestras variables y estudio es el lineal regular: <br><br>
+                    - Mejor valor de R2: 0.65
+                    - MSE de entrenamiento Lineal: 1463 <br>
+                    - MSE de prueba Lineal: 7330 <br><br>
+                    Si bien es cierto los valores de error cuadrático medio no son los ideales, es un modelo que puede ser usado.
+                </h4> 
+                <br><br>
+
+                <h3 id="parr_1">2) Predicción del valor de la tasa de desempleo</h3>
+                <br><br>
+                <h4 id="parr_1">Al realizar pruebas de los tres modelos de regresión, con distintos valores de alpha para los que lo requieren, se llega a la conclusión
+                    de que el modelo que mejor se adapta a nuestras variables y estudio es el de Ridge: <br><br>
+                    - El mejor valor de R2 para el modelo es de: 0.65 <br>
+                    - MSE de entrenamiento Lineal: 0.91 <br>
+                    - MSE de prueba Lineal: 5.94 <br><br>
+                    Si bien es cierto se puede crear un modelo que predice el comportamiento, este será muy inexacto, por lo que no es recomendable
+                    para ningun estudio ni uso.
+                </h4> 
+
+
+                
+
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
